@@ -14,13 +14,13 @@ body{
     justify-content: center;
 }
 .yellow{
-    background-color: rgb(229, 248, 15);
+    background-color: rgb(215, 233, 25);
  }
  .yellow:hover{ 
      /* background-color: rgb(194, 194, 39);  */
 } 
 .red{
-    background-color: rgb(242, 62, 62);
+    background-color: rgb(230, 18, 18);
 }
  .red:hover{
     /* background-color: rgb(197, 56, 56);   */
