@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+    background-color: rgb(132, 163, 240);
+}
+.btn{
+    height: 200px;
+    width: 200px;
+    /* border: 5px solid black; */
+    border-radius: 10%;
+    margin: 2.5rem;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+.yellow{
+    background-color: rgb(229, 248, 15);
+ }
+ .yellow:hover{ 
+     /* background-color: rgb(194, 194, 39);  */
+} 
+.red{
+    background-color: rgb(242, 62, 62);
+}
+ .red:hover{
+    /* background-color: rgb(197, 56, 56);   */
+ }
+.purple{
+    background-color: rgb(255, 49, 255);
+}
+ .purple:hover{
+    /* background-color: purple; */
+} 
+.green:hover{
+    /* background-color: green; */
+} 
+.green{
+    background-color: rgb(21, 255, 21);
+}
+.btnflash{
+    background-color: azure;
+}
+.userflash{
+    background-color: green;
+}
