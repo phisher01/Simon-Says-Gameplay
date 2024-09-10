@@ -14,6 +14,9 @@ let h2=document.querySelector("h2");
 
 
 
+
+
+
 document.addEventListener("keypress",function(){
     var audio = new Audio('gs.mp3');
     audio.play();
