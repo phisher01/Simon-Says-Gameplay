@@ -1,23 +1,47 @@
+
+// window.onload = function() {
+    
+//     document.getElementById("my_audio").play();
+// };
 let high=document.createElement("h3");
 let gameseq=[];
 let userseq=[];
 let btns=["yellow","red","purple","green"];
 let started =false;
-let level=0;
 let highest=0;
-
+let level=0;
 let h2=document.querySelector("h2");
 
+
+
+
+
+
 document.addEventListener("keypress",function(){
+    var audio = new Audio('gs.mp3');
+    audio.play();
     if(started==false){
         console.log("Game startted");
         started=true;
         levelup();
-
+        
     }
-
+    
 })
 
+
+window.addEventListener("load",()=>{
+    var audio = new Audio('start.wav');
+    audio.play();
+        console.log("page is fully loaded");
+    
+        
+        
+        
+
+    
+
+});
 function btnflash(btn){
     btn.classList.add("btnflash")
     setTimeout(() => {
@@ -65,12 +89,16 @@ function checkans(idx){
     
     if(gameseq[idx]===userseq[idx]){
         if(gameseq.length==userseq.length){
+            var audio = new Audio('s1.mp3');
+            audio.play();
 
             
             setTimeout(levelup,1000);
             }
     }
     else{
+        var audio = new Audio('over.wav');
+        audio.play();
         let body=document.querySelector("body");
         body.style.backgroundColor="red";
         setTimeout(()=>{
@@ -85,6 +113,7 @@ function checkans(idx){
     h2.innerHTML=`Game Over !     Your  score was <b>${score}</b> <br>Press any key to start again`;
     high.innerText=`Highest Score:${highest}`;
     h2.insertAdjacentElement("afterend",high);
+
         reset();
 
 
@@ -104,6 +133,7 @@ function btnpress(){
 
 }
 function reset(){
+   
     started=false;
     gameseq=[];
     userseq=[];
